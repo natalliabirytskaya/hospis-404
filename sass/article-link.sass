@@ -1,0 +1,44 @@
+.article-link
+  display: flex
+  flex-direction: column
+  text-decoration: none
+
+  &__img-container
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+
+  &__img
+    margin-bottom: 15px
+    width: 100%
+    flex-grow: 1
+    object-fit: cover
+    background-color: $color-grey
+    filter: grayscale(1)
+    transition: filter 0.3s
+
+  &__caption,
+  &__details
+    line-height: 2.9rem
+    font-weight: 500
+    transition: color 0.3s
+
+  &__caption
+    height: 5.8rem
+    overflow: hidden
+    font-size: 2.5rem
+    letter-spacing: -1px
+    color: $color-text
+
+  &__details
+    font-size: 2rem
+    color: $color-link
+
+  &:hover
+    .article-link
+      &__img
+        filter: grayscale(0)
+
+      &__caption,
+      &__details
+        color: $color-link-hover

@@ -1,0 +1,15 @@
+.articles
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  &__item
+    width: 28%
+    max-width: 365px
+    margin-bottom: 20px
+
+    @media (max-width: 600px)
+      width: 45%
+      
+      &:nth-child(2) ~ .articles__item
+        display: none

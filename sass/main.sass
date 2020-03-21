@@ -1,0 +1,24 @@
+.main
+  padding: 60px 20px 40px
+  flex-grow: 1
+  background-color: $color-background
+  background-image: url("images/bg.png")
+  background-repeat: no-repeat
+  background-size: auto
+  background-position: calc(50% - 520px) top
+
+  @media (max-width: 900px)
+    background-image: none
+
+  &__content
+    padding-left: 50px
+
+    @media (max-width: 1350px)
+      padding-left: 0
+
+  &__section
+    margin-bottom: 40px
+
+    @media (max-width: 900px)
+      margin-bottom: 30px
+    
