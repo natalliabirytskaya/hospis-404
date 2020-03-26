@@ -8,6 +8,10 @@ body {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff; }
+  @media (max-width: 1023px) {
+    html,
+    body {
+      font-size: 8px; } }
 
 .body {
   min-height: 100vh;
@@ -18,8 +22,13 @@ body {
   max-width: 1350px;
   margin: 0 auto; }
 
+.main-text {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 400; }
+
 .main {
-  padding: 60px 20px 40px;
+  padding: 30px 20px 40px;
   flex-grow: 1;
   background-color: #000000;
   background-image: url("images/bg.png");
@@ -40,6 +49,20 @@ body {
       .main__section {
         margin-bottom: 30px; } }
 
+.title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: #999999;
+  font-weight: 500; }
+  .title--big {
+    font-size: 12.6rem;
+    line-height: 12.6rem; }
+
+.subtitle {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  font-weight: 600; }
+
 .error-description {
   padding-left: calc(50% - 205px);
   min-height: 400px;
@@ -51,26 +74,12 @@ body {
       min-height: unset;
       text-align: center; } }
   .error-description__title {
-    font-size: 2.8rem;
-    line-height: 3.2rem;
-    color: #999999;
-    font-weight: 500;
     margin-bottom: 45px; }
-    .error-description__title--big {
-      font-size: 12.6rem;
-      line-height: 12.6rem; }
     @media (max-width: 900px) {
       .error-description__title {
         margin-bottom: 30px; } }
   .error-description__subtitle {
-    font-size: 3.2rem;
-    line-height: 3.5rem;
-    font-weight: 600;
     margin-bottom: 25px; }
-  .error-description__text {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 400; }
 
 .articles {
   display: flex;
@@ -78,8 +87,7 @@ body {
   flex-wrap: wrap; }
   .articles__item {
     width: 28%;
-    max-width: 365px;
-    margin-bottom: 20px; }
+    max-width: 365px; }
     @media (max-width: 600px) {
       .articles__item {
         width: 45%; }
