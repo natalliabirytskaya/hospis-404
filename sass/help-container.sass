@@ -1,0 +1,27 @@
+.help-container
+  text-align: center
+  position: relative
+
+  &__text
+    width: calc(100% - 155px*2)
+    max-width: 720px
+    margin: 0 auto 30px
+    font-size: 2.2rem
+    line-height: 2.4rem
+
+    @media (max-width: 900px)
+      width: 100%
+
+  &__button
+    @media (max-width: 900px)
+      margin-bottom: 40px
+
+  &__logo
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+
+    @media (max-width: 900px)
+      position: static
+      margin: 0 auto
